@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#103a62">
+
+   <include layout="@layout/title">
+
+   </include>
+   <FrameLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="600dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="50dp"
+          android:layout_marginRight="50dp"
+          android:orientation="vertical"
+          android:background="@drawable/bg_realtime_right">
+         <TextView
+             android:id="@+id/tv_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/white"
+             android:layout_marginTop="20dp"
+             android:layout_marginLeft="30dp"/>
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="15dp"
+             android:background="@color/white"></ImageView>
+         <HorizontalScrollView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+            <ListView
+                android:id="@+id/lv_realtime_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:layout_marginLeft="15dp">
+
+            </ListView>
+         </HorizontalScrollView>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="250dp"
+          android:layout_height="200dp"
+          android:orientation="vertical"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="680dp"
+          android:background="@drawable/bg_realtime_left">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:textColor="@color/white"
+              android:text="@string/qs_line"/>
+         <com.socket.pad.paddemo.Utils.CustomLineChart
+             android:id="@+id/lineChart_sq"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginBottom="10dp"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="250dp"
+          android:layout_height="200dp"
+          android:orientation="vertical"
+          android:layout_marginTop="230dp"
+          android:layout_marginLeft="680dp"
+          android:background="@drawable/bg_realtime_left">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:textColor="@color/white"
+              android:text="@string/slgt_line"/>
+         <com.socket.pad.paddemo.Utils.CustomLineChart
+             android:id="@+id/lineChart_slgt"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_marginBottom="10dp"/>
+      </LinearLayout>
+   </FrameLayout>
+
+
+</LinearLayout>

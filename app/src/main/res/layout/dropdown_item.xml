@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="316px"
+    android:layout_height="60px"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"/>
+    <RelativeLayout
+        android:layout_width="316px"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="32px"
+            android:layout_marginLeft="8px"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
