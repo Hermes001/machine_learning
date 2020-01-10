@@ -1,2 +1,2 @@
 # machine_learning
-My self learning of machine learning
+A project will integrate machine learning soon
