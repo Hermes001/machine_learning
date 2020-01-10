@@ -6,8 +6,8 @@ import android.os.Parcelable;
 public class ConfigureModel implements Parcelable {
 
     /*
-    * 实验ID
-    * */
+     * 实验ID
+     * */
     private String sy_id;
 
     /*
@@ -44,7 +44,7 @@ public class ConfigureModel implements Parcelable {
         cj_ip = in.readString();
     }
 
-    public ConfigureModel(){
+    public ConfigureModel() {
 
     }
 

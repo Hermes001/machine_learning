@@ -6,51 +6,61 @@ public class TimeUtils {
 
     /**
      * 获取年
+     *
      * @return
      */
-    public static int getYear(){
+    public static int getYear() {
         Calendar cd = Calendar.getInstance();
-        return  cd.get(Calendar.YEAR);
+        return cd.get(Calendar.YEAR);
     }
+
     /**
      * 获取月
+     *
      * @return
      */
-    public static int getMonth(){
+    public static int getMonth() {
         Calendar cd = Calendar.getInstance();
-        return  cd.get(Calendar.MONTH)+1;
+        return cd.get(Calendar.MONTH) + 1;
     }
+
     /**
      * 获取日
+     *
      * @return
      */
-    public static int getDay(){
+    public static int getDay() {
         Calendar cd = Calendar.getInstance();
-        return  cd.get(Calendar.DATE);
+        return cd.get(Calendar.DATE);
     }
+
     /**
      * 获取时
+     *
      * @return
      */
-    public static int getHour(){
+    public static int getHour() {
         Calendar cd = Calendar.getInstance();
-        return  cd.get(Calendar.HOUR);
+        return cd.get(Calendar.HOUR);
     }
+
     /**
      * 获取分
+     *
      * @return
      */
-    public static int getMinute(){
+    public static int getMinute() {
         Calendar cd = Calendar.getInstance();
-        return  cd.get(Calendar.MINUTE);
+        return cd.get(Calendar.MINUTE);
 
     }
 
     /**
      * 获取当前时间的时间戳
+     *
      * @return
      */
-    public static long getCurrentTimeMillis(){
+    public static long getCurrentTimeMillis() {
         return System.currentTimeMillis();
     }
 
